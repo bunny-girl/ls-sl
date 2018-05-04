@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/bunny-girl/ls-sl/issues"
   },
-  "homepage": "https://github.com/bunny-girl/ls-sl#readme"
+  "homepage": "https://github.com/bunny-girl/ls-sl#readme",
+  "dependencies": {
+    "js-base64": "^2.4.3"
+  }
 }
