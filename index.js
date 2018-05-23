@@ -30,7 +30,7 @@ module.exports = {
     load(key) {
         try{
             if(this.validate(key)){
-                return Base64.decode(localStorage.getItem(key));
+                return this.base64 ? Base64.decode(localStorage.getItem(key)) : localStorage.getItem(key);
             }else{
                 return null;
             }
