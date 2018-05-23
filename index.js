@@ -12,7 +12,7 @@ module.exports = {
                     case 'string' :
                         break;
                     default:
-                        tempVal = JSON.parse(value);
+                        tempVal = JSON.stringify(value);
                 }
                 if(this.base64){
                     tempVal = Base64.encode(tempVal);
@@ -21,7 +21,8 @@ module.exports = {
                 return true;
             }
             catch(e){
-                return false;
+                throw e;
+                // return false;
             }
         }else {
             return false;
